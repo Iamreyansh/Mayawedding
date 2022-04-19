@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.col-md-12{
+    padding: 30px 100px 30px 100px;
+}
+body{
+    background: gray;
+}
+#topic{
+    font-family:  'Bebas Neue', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    margin: 30px auto;
+    color: black;
+    position: relative;
+    
+}
+#topic:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    margin-left:25vw;
+  }
+  
+  #topic:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    margin-right: 25vw;
+  }
+.design{
+    font-size: 70px;
+    line-height: 0.5;
+    font-family:  'Bebas Neue', cursive;
+    text-align: right;
+    letter-spacing: 8px;
+}
+#qoute{
+    padding-top: 1.2em;
+}
+.lower-design{
+    font-size: 60px;
+    line-height: 0.75;
+    font-family:  'Bebas Neue', cursive;
+}
+#intro{
+    padding-right: 12%;
+    padding-left: 12%;
+}
+.we{
+    padding-right: 18%;
+}
+#passion, #experience{
+    color: red;
+}
+#who{
+    color: red;
+    font-family:  'Bebas Neue', cursive;
+    font-size: 40px;
+    
+}
+#intro2{
+
+    padding-left: 16%;
+}
+#howdy{
+    color: red;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.col-md-12,.col-md-8,.col-md-4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #topic:before{
+        margin-left: 12vw;
+        width: 50px;
+    }
+    #topic:after{
+        margin-right: 12vw;
+        width: 50px;
+    }
+    #topic{
+        font-size: 40px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 480px){
+    #topic:before{
+        margin-left: 15vw;
+    }
+    #topic:after{
+        margin-right: 15vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+#topic:before{
+    margin-left: 12vw;
+}
+#topic:after{
+    margin-right: 12vw;
+}
+}
+@media only screen and (min-width:992px){
+    #topic:before{
+        margin-left: 21vw;
+    }
+    #topic:after{
+        margin-right: 21vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+    #topic:before{
+        margin-left: 25vw;
+    }
+    #topic:after{
+        margin-right: 25vw;
+    }
+}
+/* .header{
+    /* background: url('https://weddingasia-backend-static-file-rest-api.s3.amazonaws.com/media/slider/EVENTS/desktop-images/desktop_image_view.png'); */
+    /* background-size: cover; */
+    /* height: 120vh; */
+/* }  */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+    /* padding: 2.5em ; */
+    /* background-color: gray; */
+
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+    gap: 8em;
+    justify-content: space-evenly;
+    padding: 3em;
+    list-style: none;
+}
+.nav-ul li a{
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    color: black;
+    /* background-color: gray; */
+    font-family: Nunito, sans-serif !important;
+    padding: 10px 3px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
+.text{
+    position: absolute;
+    top:110vh;
+    right: 38%;
+    color: white;
+}
+@media screen and (max-width:767px) {
+    nav{
+        padding-top: 1.2em;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .nav-ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        /* font-size: 18px; */
+    }
+    .nav-ul li{
+        font-size: 22px;
+    }
+    .nav-ul.show{
+        display: flex;
+        transition: all 0.5s;
+        /* background-color: white; */
+
+    }
+    .hamburger{
+        display: block;
+        color: black;
+        padding-top: 0em;
+        margin: 1em 15.5em 1.5em 2em;
+    }
+    /* .main-logo{
+        width:250px;
+        margin-left: 14%;
+    }
+    #logo{
+        height: 101px;
+    }
+    .text{
+        position: absolute;
+        top:110vh;
+        right: 3%;
+        font-size: 10px;
+        color: white;
+    } */
+   
+}
+@media screen and (min-width:1750px){
+    #topic:before{
+        margin-left: 20vw;
+    }#topic:after{
+        margin-right: 20vw;
+    }
+}

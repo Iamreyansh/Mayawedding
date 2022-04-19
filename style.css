@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+}
+body{
+    /* background: black; */
+}
+.header{
+    background: url('https://weddingasia-backend-static-file-rest-api.s3.amazonaws.com/media/slider/EVENTS/desktop-images/desktop_image_view.png');
+    background-size: cover;
+    height: 120vh;
+    
+}
+/* nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.5em ;
+
+} */
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3em;
+    list-style: none;
+}
+.nav-ul li a{
+    display: inline-block;
+    color: white;
+    font-family: Nunito, sans-serif !important;
+    padding: 10px 10px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5em;
+    color: white;
+    
+}
+.lower-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 3.5em;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    height: 200px;
+}
+.heading h3{
+    text-align: center;
+    margin-top: 2em;
+}
+.main-logo{
+    width:300px;
+    
+}
+   
+@media screen and (max-width:767px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        /* font-size: 18px; */
+    }
+    .header{
+        width: 103%;
+    }
+    .nav-ul li{
+        font-size: 22px;
+    }
+    .nav-ul.show{
+        display: flex;
+        transition: all 0.5s;
+        /* background-color: white; */
+
+    }
+    .hamburger{
+        display: block;
+        padding-top: 2em;
+        margin: 0 1.5em 1.5em 2em;
+    }
+    .main-logo{
+        width:197px;
+        margin-left: 24%;
+    }
+    #logo{
+        height: 101px;
+    }
+    .text{
+        position: absolute;
+        top:110vh;
+        right: 20vw;
+        font-size: 10px;
+        color: white;
+    }
+   
+}
+
+    
+
+
+/* --------------lower header--------------- */
