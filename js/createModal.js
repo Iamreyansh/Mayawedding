@@ -1,5 +1,7 @@
-export default function createModal(){
-    document.querySelector('body').insertAdjacentHTML('beforeend', `
+export default function createModal() {
+	document.querySelector('body').insertAdjacentHTML(
+		'beforeend',
+		`
     <div class="modal-container" aria-modal="true" role="dialog" hidden="true">
       <div class="modal">
         <div class="modal__overlay">
@@ -58,7 +60,7 @@ export default function createModal(){
         display: grid;
         place-items: center;
         overflow: hidden;
-        box-shadow: 0px 2px 40px hsl(var(--dark));
+        // box-shadow: 0px 2px 40px hsl(var(--dark));
       }
       
       .modal__image-container {
@@ -70,7 +72,7 @@ export default function createModal(){
         width: 100%;
         height: 100%;
         aspect-ratio: 16/10;
-        object-fit: cover;
+        object-fit: contain;
       }
       
       .modal__overlay {
@@ -84,6 +86,7 @@ export default function createModal(){
       .modal__btn-container {
         display: flex;
         gap: 1rem;
+        justify-content: center;
       }
         
       .modal__btn {
@@ -143,22 +146,6 @@ export default function createModal(){
         background-color: hsl(var(--bkg) / .9);
       }
     </style>
-    `)
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    `
+	);
+}
