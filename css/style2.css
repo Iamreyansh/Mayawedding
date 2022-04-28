@@ -50,7 +50,7 @@ body {
 }
 
 .image-item {
-	height: 200px;
+	aspect-ratio: 6/3;
 	width: auto;
 	cursor: zoom-in;
 	background: none;
@@ -371,7 +371,7 @@ nav ul li a:hover {
 		margin: 0 81.75px;
 	}
 	.container {
-		max-width: 1500px;
-		padding: 50px 200px 50px 200px;
+		
+		padding: 50px;
 	}
 }
